@@ -5,6 +5,7 @@ const navCloseHeader = document.getElementById('navCloseHeader');
 const navCloseSkills = document.getElementById('navCloseSkills');
 const navCloseAbout = document.getElementById('navCloseAbout');
 const navCloseProducts = document.getElementById('navCloseProducts');
+const navCloseServices = document.getElementById('navCloseServices');
 const navCloseContact = document.getElementById('navCloseContact');
 
 navBtn.addEventListener('click', () => {
@@ -27,6 +28,10 @@ navCloseAbout.addEventListener('click', () => {
 });
 
 navCloseProducts.addEventListener('click', () => {
+  navBar.classList.remove('showNav');
+});
+
+navCloseServices.addEventListener('click', () => {
   navBar.classList.remove('showNav');
 });
 
